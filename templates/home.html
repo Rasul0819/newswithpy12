@@ -1,0 +1,9 @@
+{% for i in news %}
+    <a href="{% url 'detail' i.id %}">  <h1>{{i.title}}</h1>  </a>
+    <img src="{{i.image.url}}" alt="">
+    <p>{{i.pub_date}}</p>
+{% endfor %}
+
+
+
+
